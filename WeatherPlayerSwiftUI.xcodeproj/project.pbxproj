@@ -11,14 +11,24 @@
 		F7E361B02CCD0B2B008DCBFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E361AF2CCD0B2B008DCBFC /* ContentView.swift */; };
 		F7E361B22CCD0B2F008DCBFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E361B12CCD0B2F008DCBFC /* Assets.xcassets */; };
 		F7E361B52CCD0B2F008DCBFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E361B42CCD0B2F008DCBFC /* Preview Assets.xcassets */; };
+		F7E361C42CCD0BF5008DCBFC /* sun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F7E361BF2CCD0BEE008DCBFC /* sun.mp4 */; };
+		F7E361C62CCD0BF5008DCBFC /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F7E361C12CCD0BF0008DCBFC /* rain.mp4 */; };
+		F7E361C72CCD0BF5008DCBFC /* snow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F7E361C22CCD0BF1008DCBFC /* snow.mp4 */; };
+		F7E361CA2CCD0C8D008DCBFC /* ContentModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E361C92CCD0C8D008DCBFC /* ContentModelView.swift */; };
+		F7E361CD2CCD1057008DCBFC /* WeatherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E361CC2CCD1057008DCBFC /* WeatherType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F7E361AA2CCD0B2B008DCBFC /* PlayVideoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayVideoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E361AA2CCD0B2B008DCBFC /* WeatherPlayerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPlayerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E361AD2CCD0B2B008DCBFC /* PlayVideoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoSwiftUIApp.swift; sourceTree = "<group>"; };
 		F7E361AF2CCD0B2B008DCBFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7E361B12CCD0B2F008DCBFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7E361B42CCD0B2F008DCBFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7E361BF2CCD0BEE008DCBFC /* sun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun.mp4; sourceTree = "<group>"; };
+		F7E361C12CCD0BF0008DCBFC /* rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.mp4; sourceTree = "<group>"; };
+		F7E361C22CCD0BF1008DCBFC /* snow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snow.mp4; sourceTree = "<group>"; };
+		F7E361C92CCD0C8D008DCBFC /* ContentModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModelView.swift; sourceTree = "<group>"; };
+		F7E361CC2CCD1057008DCBFC /* WeatherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +45,7 @@
 		F7E361A12CCD0B2B008DCBFC = {
 			isa = PBXGroup;
 			children = (
-				F7E361AC2CCD0B2B008DCBFC /* PlayVideoSwiftUI */,
+				F7E361AC2CCD0B2B008DCBFC /* WeatherPlayerSwiftUI */,
 				F7E361AB2CCD0B2B008DCBFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +53,21 @@
 		F7E361AB2CCD0B2B008DCBFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7E361AA2CCD0B2B008DCBFC /* PlayVideoSwiftUI.app */,
+				F7E361AA2CCD0B2B008DCBFC /* WeatherPlayerSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F7E361AC2CCD0B2B008DCBFC /* PlayVideoSwiftUI */ = {
+		F7E361AC2CCD0B2B008DCBFC /* WeatherPlayerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F7E361AD2CCD0B2B008DCBFC /* PlayVideoSwiftUIApp.swift */,
-				F7E361AF2CCD0B2B008DCBFC /* ContentView.swift */,
-				F7E361B12CCD0B2F008DCBFC /* Assets.xcassets */,
-				F7E361B32CCD0B2F008DCBFC /* Preview Content */,
+				F7E361BC2CCD0B59008DCBFC /* App */,
+				F7E361BE2CCD0BD5008DCBFC /* Videos */,
+				F7E361BD2CCD0BB2008DCBFC /* Models */,
+				F7E361CB2CCD0C9E008DCBFC /* ModelViews */,
+				F7E361BB2CCD0B54008DCBFC /* Views */,
 			);
-			path = PlayVideoSwiftUI;
+			path = WeatherPlayerSwiftUI;
 			sourceTree = "<group>";
 		};
 		F7E361B32CCD0B2F008DCBFC /* Preview Content */ = {
@@ -67,12 +78,56 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F7E361BB2CCD0B54008DCBFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7E361AF2CCD0B2B008DCBFC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7E361BC2CCD0B59008DCBFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F7E361AD2CCD0B2B008DCBFC /* PlayVideoSwiftUIApp.swift */,
+				F7E361B12CCD0B2F008DCBFC /* Assets.xcassets */,
+				F7E361B32CCD0B2F008DCBFC /* Preview Content */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		F7E361BD2CCD0BB2008DCBFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7E361CC2CCD1057008DCBFC /* WeatherType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7E361BE2CCD0BD5008DCBFC /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				F7E361C12CCD0BF0008DCBFC /* rain.mp4 */,
+				F7E361C22CCD0BF1008DCBFC /* snow.mp4 */,
+				F7E361BF2CCD0BEE008DCBFC /* sun.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		F7E361CB2CCD0C9E008DCBFC /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				F7E361C92CCD0C8D008DCBFC /* ContentModelView.swift */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F7E361A92CCD0B2B008DCBFC /* PlayVideoSwiftUI */ = {
+		F7E361A92CCD0B2B008DCBFC /* WeatherPlayerSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7E361B82CCD0B2F008DCBFC /* Build configuration list for PBXNativeTarget "PlayVideoSwiftUI" */;
+			buildConfigurationList = F7E361B82CCD0B2F008DCBFC /* Build configuration list for PBXNativeTarget "WeatherPlayerSwiftUI" */;
 			buildPhases = (
 				F7E361A62CCD0B2B008DCBFC /* Sources */,
 				F7E361A72CCD0B2B008DCBFC /* Frameworks */,
@@ -82,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = PlayVideoSwiftUI;
+			name = WeatherPlayerSwiftUI;
 			productName = PlayVideoSwiftUI;
-			productReference = F7E361AA2CCD0B2B008DCBFC /* PlayVideoSwiftUI.app */;
+			productReference = F7E361AA2CCD0B2B008DCBFC /* WeatherPlayerSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F7E361A52CCD0B2B008DCBFC /* Build configuration list for PBXProject "PlayVideoSwiftUI" */;
+			buildConfigurationList = F7E361A52CCD0B2B008DCBFC /* Build configuration list for PBXProject "WeatherPlayerSwiftUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7E361A92CCD0B2B008DCBFC /* PlayVideoSwiftUI */,
+				F7E361A92CCD0B2B008DCBFC /* WeatherPlayerSwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +180,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E361C42CCD0BF5008DCBFC /* sun.mp4 in Resources */,
 				F7E361B52CCD0B2F008DCBFC /* Preview Assets.xcassets in Resources */,
+				F7E361C62CCD0BF5008DCBFC /* rain.mp4 in Resources */,
+				F7E361C72CCD0BF5008DCBFC /* snow.mp4 in Resources */,
 				F7E361B22CCD0B2F008DCBFC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E361B02CCD0B2B008DCBFC /* ContentView.swift in Sources */,
+				F7E361CA2CCD0C8D008DCBFC /* ContentModelView.swift in Sources */,
+				F7E361CD2CCD1057008DCBFC /* WeatherType.swift in Sources */,
 				F7E361AE2CCD0B2B008DCBFC /* PlayVideoSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlayVideoSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeatherPlayerSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 85373584HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -285,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.PlayVideoSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.WeatherPlayerSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlayVideoSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeatherPlayerSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 85373584HZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.PlayVideoSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gokhanmutlu.example.WeatherPlayerSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,7 +385,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F7E361A52CCD0B2B008DCBFC /* Build configuration list for PBXProject "PlayVideoSwiftUI" */ = {
+		F7E361A52CCD0B2B008DCBFC /* Build configuration list for PBXProject "WeatherPlayerSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7E361B62CCD0B2F008DCBFC /* Debug */,
@@ -334,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7E361B82CCD0B2F008DCBFC /* Build configuration list for PBXNativeTarget "PlayVideoSwiftUI" */ = {
+		F7E361B82CCD0B2F008DCBFC /* Build configuration list for PBXNativeTarget "WeatherPlayerSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7E361B92CCD0B2F008DCBFC /* Debug */,
