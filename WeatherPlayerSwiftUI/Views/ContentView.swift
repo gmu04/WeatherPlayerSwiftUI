@@ -28,7 +28,8 @@ struct ContentView: View {
 			VideoPlayer(player: vm.avPlayer)
 				.ignoresSafeArea(.all)
 				.frame(height: 240)
-			
+				//.scaleEffect(1.1)
+				.blur(radius: vm.isPlaying ? 0 : 5)
 			
 			VStack {
 				Button {
